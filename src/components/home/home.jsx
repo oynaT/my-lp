@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/js/bootstrap.js';
-import 'bootstrap';
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+//import 'bootstrap/dist/js/bootstrap.js';
+//import 'bootstrap';
+//import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -235,6 +235,7 @@ export default function Home() {
                 <section className="gallery-section">
 
                     <div className="sortable-masonry">
+                        
                         <div className="auto-container">
 
                             <div className="filters">
@@ -275,6 +276,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+
                         <div className="items-container clearfix">
                             <div className="gallery-block all masonry-item beard moustache col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-box">
@@ -454,24 +456,35 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                {/* <section
+
+
+                {/* Testimonial Section */}
+                <section 
                     className="testimonial-section"
                     style={{ backgroundImage: "url(./assets/images/background/1.jpg)" }}
                 >
                     <div className="auto-container">
-
+                        {/* Title Box */}
                         <div className="title-box">
                             <div className="logo-box">
                                 <img src="./assets/images/resource/testimonial-logo.png" alt="" />
                             </div>
                             <h2>Testimonials</h2>
                         </div>
+                        {/* End Title Box */}
                         <div className="testimonial-outer">
                             <div className="quote-icon">
                                 <span className="quote" />
                             </div>
+                            {/*Client Testimonial Carousel*/}
 
-                            <div className="client-testimonial-carousel owl-carousel owl-theme">
+                            <OwlCarousel items={1} className="client-testimonial-carousel owl-carousel owl-theme owl-loaded owl-drag"
+                                loop
+                                nav
+                                 >
+
+                            {/* <div className="client-testimonial-carousel owl-carousel owl-theme"> </div> */}
+                                {/* Testimonial Block */}
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <p>
@@ -496,6 +509,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
+                                {/* Testimonial Block */}
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <p>
@@ -520,6 +534,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
+                                {/* Testimonial Block */}
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <p>
@@ -544,6 +559,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
+                                {/* Testimonial Block */}
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <p>
@@ -568,6 +584,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
+                                {/* Testimonial Block */}
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <p>
@@ -592,6 +609,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
+                                {/* Testimonial Block */}
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <p>
@@ -616,8 +634,9 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="client-thumb-outer">
+                           
+                            {/*Product Thumbs Carousel*/}
+                            {/* <div className="client-thumb-outer"> </div> */}
                                 <div className="client-thumbs-carousel owl-carousel owl-theme">
                                     <div className="thumb-item">
                                         <figure className="thumb-box">
@@ -649,278 +668,19 @@ export default function Home() {
                                             <img src="./assets/images/resource/author-3.jpg" alt="" />
                                         </figure>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-
-
-  <section
-                    className="testimonial-section"
-                    style={{ backgroundImage: "url(./assets/images/background/1.jpg)" }}
-                >
-                    <div className="auto-container">
-
-                        <div className="title-box">
-                            <div className="logo-box">
-                                <img src="./assets/images/resource/testimonial-logo.png" alt="" />
-                            </div>
-                            <h2>Testimonials</h2>
-                        </div>
-                        <div className="testimonial-outer">
-                            <div className="quote-icon">
-                                <span className="quote" />
-                            </div>
-
-                            <div className="client-testimonial-carousel owl-carousel owl-theme">
-                                <div className="testimonial-block">
-                                    <div className="inner-box">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Praesent nec risus vitae sem vulputate eleifend id sit amet
-                                            nunc. Etiam condimentum at sapien a porttitor. Donec ultricies
-                                            sollicitudin lacus. Donec purus id velit, pulvinar eget sodales
-                                            non, rhoncus quis quam. Morbi eros ante, tempus eget convallis
-                                            semper, ultricies id odio. Phasellus vel sodales augue.
-                                        </p>
-                                        <div className="info-box">
-                                            <div className="rating">
-                                                <span className="fa fa-star" />
-                                                <span className="fa fa-star" />
-                                                <span className="fa fa-star" />
-                                                <span className="fa fa-star" />
-                                                <span className="fa fa-star" />
-                                            </div>
-                                            <div className="author-info">
-                                                aslam hasib - <span>Web Developer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div className="client-thumb-outer">
-                                <div className="client-thumbs-carousel owl-carousel owl-theme">
-                                    <div className="thumb-item">
-                                        <figure className="thumb-box">
-                                            <img src="./assets/images/resource/author-1.jpg" alt="" />
-                                        </figure>
-                                    </div>
-                                    <div className="thumb-item">
-                                        <figure className="thumb-box">
-                                            <img src="./assets/images/resource/author-2.jpg" alt="" />
-                                        </figure>
-                                    </div>
-                                    <div className="thumb-item">
-                                        <figure className="thumb-box">
-                                            <img src="./assets/images/resource/author-3.jpg" alt="" />
-                                        </figure>
-                                    </div>
-                                    <div className="thumb-item">
-                                        <figure className="thumb-box">
-                                            <img src="./assets/images/resource/author-1.jpg" alt="" />
-                                        </figure>
-                                    </div>
-                                    <div className="thumb-item">
-                                        <figure className="thumb-box">
-                                            <img src="./assets/images/resource/author-2.jpg" alt="" />
-                                        </figure>
-                                    </div>
-                                    <div className="thumb-item">
-                                        <figure className="thumb-box">
-                                            <img src="./assets/images/resource/author-3.jpg" alt="" />
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> 
-
-
-                <div className="testimonial-outer"   style={{ backgroundImage: "url(./assets/images/background/1.jpg)" }}>
-                    <div className="quote-icon">
-                        <span className="quote"> </span>
-                    </div>
-                    <div className="client-testimonial-carousel owl-carousel owl-theme owl-loaded owl-drag">
-
-                        <div className="owl-stage-outer">
-                            <div className="owl-stage">
-                                <div className="owl-item">
-                                   
-                                    <div className="testimonial-block">
-                                        <div className="inner-box">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Praesent nec risus vitae sem vulputate eleifend id sit amet
-                                                nunc. Etiam condimentum at sapien a porttitor. Donec ultricies
-                                                sollicitudin lacus. Donec purus id velit, pulvinar eget sodales
-                                                non, rhoncus quis quam. Morbi eros ante, tempus eget convallis
-                                                semper, ultricies id odio. Phasellus vel sodales augue.
-                                            </p>
-                                            <div className="info-box">
-                                                <div className="rating">
-                                                    <span className="fa fa-star" />
-                                                    <span className="fa fa-star" />
-                                                    <span className="fa fa-star" />
-                                                    <span className="fa fa-star" />
-                                                    <span className="fa fa-star" />
-                                                </div>
-                                                <div className="author-info">
-                                                    aslam hasib - <span>Web Developer</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                
                                 </div>
                                
-                            </div>
-                        </div>
 
-                        <div className="owl-nav">
-                            <div className="owl-prev">
-                                <span className="icofont-thin-left" />
-                            </div>
-                            <div className="owl-next">
-                                <span className="icofont-thin-right" />
-                            </div>
-                        </div>
-                        <div className="owl-dots disabled" />
-                    </div>
-                    {/*Product Thumbs Carousel*/}
-                    <div className="client-thumb-outer">
-                        <div className="client-thumbs-carousel owl-carousel owl-theme owl-loaded owl-drag">
-                            <div className="owl-stage-outer">
-                                <div
-                                    className="owl-stage"
-                                    style={{
-                                        transform: "translate3d(-658px, 0px, 0px)",
-                                        transition: "all 0.5s ease 0s",
-                                        width: 1128
-                                    }}
-                                >
-                                    <div
-                                        className="owl-item cloned"
-                                        style={{ width: 69, marginRight: 25 }}
-                                    >
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="./assets/images/resource/author-1.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="owl-item cloned"
-                                        style={{ width: 69, marginRight: 25 }}
-                                    >
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="./assets/images/resource/author-2.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="owl-item cloned"
-                                        style={{ width: 69, marginRight: 25 }}
-                                    >
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="./assets/images/resource/author-3.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div className="owl-item" style={{ width: 69, marginRight: 25 }}>
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="./assets/images/resource/author-1.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div className="owl-item" style={{ width: 69, marginRight: 25 }}>
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-2.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div className="owl-item" style={{ width: 69, marginRight: 25 }}>
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-3.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div className="owl-item" style={{ width: 69, marginRight: 25 }}>
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-1.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="owl-item active"
-                                        style={{ width: 69, marginRight: 25 }}
-                                    >
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-2.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div className="owl-item" style={{ width: 69, marginRight: 25 }}>
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-3.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="owl-item cloned"
-                                        style={{ width: 69, marginRight: 25 }}
-                                    >
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-1.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="owl-item cloned"
-                                        style={{ width: 69, marginRight: 25 }}
-                                    >
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-2.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="owl-item cloned"
-                                        style={{ width: 69, marginRight: 25 }}
-                                    >
-                                        <div className="thumb-item">
-                                            <figure className="thumb-box">
-                                                <img src="images/resource/author-3.jpg" alt="" />
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="owl-nav disabled">
-                                <div className="owl-prev">
-                                    <span className="icon icofont-rounded-left" />
-                                </div>
-                                <div className="owl-next">
-                                    <span className="icon icofont-rounded-right" />
-                                </div>
-                            </div>
-                            <div className="owl-dots disabled" />
+                        </OwlCarousel>
+
+                        
                         </div>
                     </div>
+                    
+                </section>
+                {/* End Testimonial Section */}
 
-                </div>
 
 
 
@@ -1163,11 +923,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-            </div>
-
-
-      
-
+            </div>            
         </>
     )
 }

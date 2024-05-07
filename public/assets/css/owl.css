@@ -178,3 +178,8 @@
     display: none !important;
 
 }
+
+button.owl-next span, button.owl-prev span {
+  font-size: 80px;
+  font-weight: 100;
+}

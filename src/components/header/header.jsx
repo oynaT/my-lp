@@ -1,17 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-//import Search from '../search/search';
 
 export default function Header() {
 
     const location = useLocation();
     const isActiveLocation = ['/about', '/blog', '/blog-detail', '/pricing', '/contact',].includes(location.pathname);
-
-    // const [isSearchOpen, setIsSearchOpen] = useState(false);
-    // const toggleSearch = () => {
-    //     setIsSearchOpen(!isSearchOpen);
-    // };
 
     return (
         <>
@@ -44,8 +38,8 @@ export default function Header() {
                                             <li ><Link className="current" to="/">Home</Link></li>
                                             <li className="dropdown"><Link to="#">About</Link>
                                                 <ul>
-                                                    <li><Link  to="/about">About</Link></li>
-                                                    <li> <Link  to="/pricing">Pricing</Link></li>
+                                                    <li><Link to="/about">About</Link></li>
+                                                    <li> <Link to="/pricing">Pricing</Link></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -53,11 +47,11 @@ export default function Header() {
                                         <ul className="navigation right-nav clearfix">
                                             <li className="dropdown"><Link to="#">Blog</Link>
                                                 <ul>
-                                                    <li><Link  to="/blog">Our Blog</Link></li>
-                                                    <li><Link  to="/blog-detail">Blog Detail</Link></li>
+                                                    <li><Link to="/blog">Our Blog</Link></li>
+                                                    <li><Link to="/blog-detail">Blog Detail</Link></li>
                                                 </ul>
                                             </li>
-                                            <li><Link  to="/contact">Contact</Link></li>
+                                            <li><Link to="/contact">Contact</Link></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -70,7 +64,7 @@ export default function Header() {
 
                                 <div className="outer-box clearfix">
                                     <ul className="options-nav">
-                                        <li className="search-box-outer icon-magnifier" ></li>
+                                        <li className="search-box-outer icon-magnifier"></li>
                                     </ul>
 
                                     <div className="cart-box">
@@ -126,12 +120,12 @@ export default function Header() {
                         </div>
                     </nav>
                 </div>
-                          </header>
+            </header>
 
             {/* {isSearchOpen && <Search toggleSearch={toggleSearch} />} */}
 
-      
-            
+
+
         </>
 
     )
